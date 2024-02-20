@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Elites</title>
+    <title>Alumni Events</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,8 +30,10 @@
         border-radius: 20px red;
     }
     .w3-card-4 {
-    border: 2px solid #f74d4d;
-    box-shadow: 0 20px 20px 0 rgba(50, 52, 163, 0.2);
+      padding: 0.01 em 2 px;
+      margin-bottom: 30px;
+      border: 2px solid #f74d4d;
+      box-shadow: 0 20px 20px 0 rgba(50, 52, 163, 0.2);
     }
     .photo-container {
     position: relative;
@@ -76,11 +78,74 @@
     .close:hover {
     color: rgb(222, 113, 113);
     }
+    .w3-card-4:hover {
+      box-shadow: 0 20px 20px 0 rgba(50, 52, 163, 0.5);
+    }
+    /* About Section */
+.section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.card {
+    width: calc(25% - 30px);
+    margin: 0 15px 30px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #f74d4d;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #28399a;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
     </style>
   </head>
   <body>
     
-
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
       <!-- Avatar image in top left corner -->
@@ -117,11 +182,16 @@
     <div class="w3-padding-large" id="main">
       <!-- Home/Landing Page -->
       <header class="w3-container w3-padding-32 w3-center" id="home">
-        <div id="typing-effect" >
-          <h1 style="color: #f74d4d; font-size: 48px;">WELCOME TO ALU Alumni</h1>
+        <div id="typing-effect" style="background-image: url('continent.png'); background-repeat: no-repeat; background-position: right; background-size: contain;" >
+          <h1 style="color: #f74d4d; font-size: 48px;">WELCOME TO Alumni Events  Hub</h1>
+          
+          <h3 style="text-align: center;">Reserve your slot at any event you want</h3>
+          <h4>All from one university</h4>
+          
           <h2 style="color: #28399a;">African Leadership University</h2>
           <h3 style="color: #d5acac;">Igniting African Genius</h3>
           <p style="color: #d34f4f;">Empowering Africa's future leaders</p>
+          <h3 style="text-align: center;">Track campus and professional development events on one Go</h3>
         </div>
       </header>
     
@@ -146,11 +216,12 @@
                           <span class="close">&times;</span>
                         </div>
                       </div>
-                    <h3>Ikaze ceremony</h3>
-                    <p>Details of the event are as follows:
-                       <br>Date: February 13, 2024<br>
+                    <h3 style="color: #28399a;">Ikaze ceremony</h3>
+                    <p>Date: February 13, 2024<br>
                        Time: 4 pm to 8 pm<br>
                        Venue: Parking Lot.</p>
+                       <br>
+                       <br>
                        
                 </div>
                 </div>
@@ -167,11 +238,52 @@
                           <span class="close">&times;</span>
                         </div>
                       </div>
-                    <h3>Weekend leasure Time</h3>
-                    <p>Details of the event are as follows:
-                       <br>Date: February 14, 2024<br>
+                    <h3 style="color: #28399a;">Weekend leasure Time</h3>
+                    <p>Date: February 14, 2024<br>
                        Time: 4 pm to 6 pm<br>
                        Venue: Basketball Court.</p>
+                        
+                </div>
+                </div>
+              </div>
+              <br>
+              <div class="w3-half">
+                <div class="w3-card-4">
+                  <div class="w3-container event-container">
+                    <div class="photo-container">
+                        <a href="#">
+                          <img src="love.jpg" alt="Photo Icon">
+                        </a>
+                        <div class="popup">
+                          <img src="love.jpg" alt="Large Photo">
+                          <span class="close">&times;</span>
+                        </div>
+                      </div>
+                    <h3 style="color: #28399a;">Love project</h3>
+                    <p>Date: March 10, 2024<br>
+                       Time: 4 pm to 6 pm<br>
+                       Venue: Basketball Court.</p><br>
+                        
+                </div>
+                </div>
+              </div>
+              <div class="w3-half">
+                <div class="w3-card-4">
+                  <div class="w3-container event-container">
+                    <div class="photo-container">
+                        <a href="#">
+                          <img src="arts.jpg" alt="Photo Icon">
+                        </a>
+                        <div class="popup">
+                          <img src="arts.jpg" alt="Large Photo">
+                          <span class="close">&times;</span>
+                        </div>
+                      </div>
+                    <h3 style="color: #28399a;">Arts festival</h3>
+                    <p>Date: February 14, 2024<br>
+                       Time: 4 pm to 6 pm<br>
+                       Venue: Leadership Center</p>
+                       
                         
                 </div>
                 </div>
@@ -195,11 +307,10 @@
                           <span class="close">&times;</span>
                         </div>
                       </div>
-                    <h3>Class of 2020 Graduation Gala</h3>
-                    <p>Details of the event are as follows:
-                       <br>Date: February 14, 2024<br>
+                    <h3 style="color: #28399a;">Class of 2020 Graduation</h3>
+                    <p>Date: February 14, 2024<br>
                        Time: 4 pm to 6 pm<br>
-                       Venue: Kigali Convention center.</p>
+                       Venue: KigaliConventionCenter.</p>
                        
                     </div>
                 </div>
@@ -209,78 +320,123 @@
                   <div class="w3-container event-container">
                     <div class="photo-container">
                         <a href="#">
-                          <img src="tedx.jpg" alt="Photo Icon">
+                          <img src="financial.jpg" alt="Photo Icon">
                         </a>
                         <div class="popup">
-                          <img src="tedx.jpg" alt="Large Photo">
+                          <img src="financial.jpg" alt="Large Photo">
                           <span class="close">&times;</span>
                         </div>
                       </div>
-                    <h3>Tedx talks</h3>
-                    
-                    <p>Details of the event are as follows:
-                        <br>Date: February 15, 2024<br>
-                        Time: 7 am to 2 pm<br>
-                        Venue: Canal Olympia Rebero.</p>
-                    </div>
+                    <h3 style="color: #28399a;">Financial fair</h3>
+                    <p>Date: February 14, 2024<br>
+                       Time: 4 pm to 6 pm<br>
+                       Venue: Basketball Court.</p><br>
+                        
+                </div>
+                </div>
+              </div>
+              <div class="w3-half">
+                <div class="w3-card-4">
+                  <div class="w3-container event-container">
+                    <div class="photo-container">
+                        <a href="#">
+                          <img src="career.jpg" alt="Photo Icon">
+                        </a>
+                        <div class="popup">
+                          <img src="career.jpg" alt="Large Photo">
+                          <span class="close">&times;</span>
+                        </div>
+                      </div>
+                    <h3 style="color: #28399a;">Career Fair</h3>
+                    <p>Date: February 20, 2024<br>
+                       Time: 10 am to 4 pm<br>
+                       Venue: Kenya Burundi</p>
+                        
+                </div>
+                </div>
+              </div>
+              <div class="w3-half">
+                <div class="w3-card-4">
+                  <div class="w3-container event-container">
+                    <div class="photo-container">
+                        <a href="#">
+                          <img src="pitch.jpg" alt="Photo Icon">
+                        </a>
+                        <div class="popup">
+                          <img src="pitch.jpg" alt="Large Photo">
+                          <span class="close">&times;</span>
+                        </div>
+                      </div>
+                    <h3 style="color: #28399a;">Elevetor pitch session</h3>
+                    <p>Date: February 2, 2024<br>
+                       Time: 1 pm to 3 pm<br>
+                       Venue: Eswatini Room</p>
+                        
+                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-        <!-- About Section -->
+    
+      <!-- About Section -->
+      <!-- About Section -->
 <div class="w3-content w3-padding-64" id="about">
   <h2 class="w3-text-grey">About Us</h2>
   <hr style="width:200px" class="w3-opacity red">
   <!-- Add about us content here -->
   <section class="section">
-    <div class="container">
-      <h2 class="section-title">Our Team</h2>
-      <div class="row">
-        <div class="col-1-5 card">
-          
-          <h3 class="card-title">Niyonshuti David</h3>
-          <p class="card-description">Your Technical Expertise</p>
-        </div>
-        <!-- Member 2 -->
-        <div class="col-1-5 card">
-          <div class="profile-pic">
-            <img src="" alt="Profile Picture" class="card-image">
+      <div class="container">
+          <div class="row">
+              <!-- Member 1 -->
+              <div class="col-1-5 card">
+                  <div class="profile-pic">
+                      <img src="David.jpg" alt="Profile Picture" class="card-image">
+                  </div>
+                  <h3 class="card-title">Niyonshuti David</h3>
+                  <p class="card-description">Design and front-end developer</p>
+              </div>
+              <!-- Member 2 -->
+              <div class="col-1-5 card">
+                  <div class="profile-pic">
+                      <img src="Kudum.jpeg" alt="Profile Picture" class="card-image">
+                  </div>
+                  <h3 class="card-title">Daniel Kudum</h3>
+                  <p class="card-description">Team manager and website testing, moreover handled about section  </p>
+              </div>
+              <!-- Member 3 -->
+              <div class="col-1-5 card">
+                  <div class="profile-pic">
+                      <img src="stella.jpg" alt="Profile Picture" class="card-image">
+                  </div>
+                  <h3 class="card-title">Stella Habiyambere</h3>
+                  <p class="card-description">Html Developer and research analysist</p>
+              </div>
+              <!-- Member 4 -->
+              <div class="col-1-5 card">
+                  <div class="profile-pic">
+                      <img src="cysron.jpeg" alt="Profile Picture" class="card-image">
+                  </div>
+                  <h3 class="card-title">Bugingo Cysron</h3>
+                  <p class="card-description">Cysron has a keen eye for design and user experience, ensuring that the website is visually appealing and easy to navigate.</p>
+              </div>
+              <!-- Member 5 -->
+              <div class="col-1-5 card">
+                  <div class="profile-pic">
+                      <img src="david_ubushakebwimana.jpg" alt="Profile Picture" class="card-image">
+                  </div>
+                  <h3 class="card-title">David Ubushakebwimana</h3>
+                  <p class="card-description">Designing and styling of website</p>
+              </div>
           </div>
-          <h3 class="card-title">Daniel Kudum</h3>
-          <p class="card-description">Your Technical Expertise</p>
-        </div>
-        <!-- Member 3 -->
-        <div class="col-1-5 card">
-          <div class="profile-pic">
-            <img src="" alt="Profile Picture" class="card-image">
-          </div>
-          <h3 class="card-title">Stella Habiyambere</h3>
-          <p class="card-description">Your Technical Expertise.</p>
-        </div>
-        <!-- Member 4 -->
-        <div class="col-1-5 card">
-          <div class="profile-pic">
-            <img src="cysron.jpg" alt="Profile Picture" class="card-image">
-          </div>
-          <h3 class="card-title">Bugingo Cysron</h3>
-          <p class="card-description">Cysron has a keen eye for design and user experience, ensuring that the website is visually appealing and easy to navigate.</p>
-        </div>
-        <!-- Member 5 -->
-        <div class="col-1-5 card">
-          <div class="profile-pic">
-            <img src="" alt="Profile Picture" class="card-image">
-          </div>
-          <h3 class="card-title">David Ubushakebwimana</h3>
-          <p class="card-description">Your Technical Expertise.</p>
-        </div>
-        
       </div>
-    </div>
   </section>
 </div>
+
+        </div>
+            
+      </div>
     
       <!-- Contact Section -->
       <div class="w3-padding-64 w3-content" id="contact">
@@ -339,8 +495,9 @@
             const popups = document.querySelectorAll('.popup');
     
             photoIcons.forEach((icon, index) => {
-                icon.addEventListener('click', () => {
-                    popups[index].style.display = 'block';
+                icon.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  popups[index].style.display = 'block';
                 });
             });
     
